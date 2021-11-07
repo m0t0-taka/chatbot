@@ -7,7 +7,7 @@ const Answer = (props) => {
 
   return (
     <Stack spacing={2} direction="row">
-      <Button variant="contained">
+      <Button variant="contained" onClick={() => props.select(props.content, props.nextId)}>
         {props.content}  
       </Button>
     </Stack>
